@@ -1,0 +1,59 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #04AA6D;
+  }
+
+  body, html {
+    margin: 0;
+    height: 100%;
+}
+.container 
+{
+    width: 100%; /* Adjust as needed */
+    height: 100%; /* Adjust as needed */
+    background-image: 'VideoBGTemplateImage.png'; /*Vidoe should go here*/
+    background-size: cover; /* Cover the entire element */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container img {
+object-fit: contain; /* Use 'contain' instead of 'cover' */
+max-width: 100%; /* Prevent image from exceeding container width */
+max-height: 100%; /* Prevent image from exceeding container height */
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns */
+  grid-gap: 10px; /* Gap between images */
+}
+
+.gallery img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
